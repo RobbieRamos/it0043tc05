@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMOS - TSA2</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h1>Pokémon Data</h1>
+        <form>
+            <label for="national-dex">National Dex Number:</label>
+            <input type="number" id="national-dex" name="national-dex" min="0" required><br><br>
+            <label for="pokemon-name">Pokemon Name:</label>
+            <input type="text" id="pokemon-name" name="pokemon-name" required><br><br>
+            <input type="radio" id="generation1" name="generation" value="Gen 1"> Generation 1
+            <input type="radio" id="generation2" name="generation" value="Gen 2"> Generation 2
+            <input type="radio" id="generation3" name="generation" value="Gen 3"> Generation 3
+            <input type="radio" id="generation4" name="generation" value="Gen 4"> Generation 4
+            <input type="radio" id="generation5" name="generation" value="Gen 5"> Generation 5
+            <input type="radio" id="generation6" name="generation" value="Gen 6"> Generation 6
+            <input type="radio" id="generation7" name="generation" value="Gen 7"> Generation 7
+            <input type="radio" id="generation8" name="generation" value="Gen 8"> Generation 8
+            <input type="radio" id="generation9" name="generation" value="Gen 9"> Generation 9<br><br>
+            <label for="pokemon-image">Pokemon Image:</label>
+            <input type="file" id="pokemon-image" name="pokemon-image" accept="image/*"><br><br>
+            <label for="type1">Type 1:</label>
+            <select id="type1" name="type1">
+                <option value="Normal">Normal</option>
+                <option value="Fire">Fire</option>
+                <option value="Water">Water</option>
+                <option value="Grass">Grass</option>
+                <option value="Electric">Electric</option>
+                <option value="Flying">Flying</option>
+                <option value="Fighting">Fighting</option>
+                <option value="Poison">Poison</option>
+                <option value="Ground">Ground</option>
+                <option value="Rock">Rock</option>
+                <option value="Psychic">Psychic</option>
+                <option value="Ice">Ice</option>
+                <option value="Bug">Bug</option>
+                <option value="Ghost">Ghost</option>
+                <option value="Steel">Steel</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Dark">Dark</option>
+                <option value="Fairy">Fairy</option>
+            </select><br><br>
+
+            <label for="type2">Type 2:</label>
+            <select id="type2" name="type2">
+                <option value="Normal">Normal</option>
+                <option value="Fire">Fire</option>
+                <option value="Water">Water</option>
+                <option value="Grass">Grass</option>
+                <option value="Electric">Electric</option>
+                <option value="Flying">Flying</option>
+                <option value="Fighting">Fighting</option>
+                <option value="Poison">Poison</option>
+                <option value="Ground">Ground</option>
+                <option value="Rock">Rock</option>
+                <option value="Psychic">Psychic</option>
+                <option value="Ice">Ice</option>
+                <option value="Bug">Bug</option>
+                <option value="Ghost">Ghost</option>
+                <option value="Steel">Steel</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Dark">Dark</option>
+                <option value="Fairy">Fairy</option>
+            </select><br><br>
+
+            <label for="evolves-from">Evolves From:</label>
+            <input type="text" id="evolves-from" name="evolves-from"><br><br>
+            <label for="evolves-to">Evolves To:</label>
+            <input type="text" id="evolves-to" name="evolves-to"><br><br>
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" name="nickname"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Pokémon Data Table</h2>
+        <table style="width:80%">
+            <thead>
+                <tr>
+                    <th>National Dex</th>
+                    <th>Generation</th>
+                    <th>Pokémon Name</th>
+                    <th>Image</th>
+                    <th>Type 1</th>
+                    <th>Type 2</th>
+                    <th>Evolves From</th>
+                    <th>Evolves To</th>
+                    <th>Nickname</th>
+                    <th>Birthday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>202310031</td>
+                    <td>Generation Z</td>
+                    <td>Robbie</td>
+                    <td><img width="100px" height="100px"
+                            src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/429787074_1896378417480365_5774782932453280811_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=GtaAoNFbyV4Q7kNvgFgbNC4&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfDX-pC3gEOf8Fzjrud-nXubc9TmmQfilWsaDBdmyBimHQ&oe=66417FE7"
+                            alt="Chikorita"></td>
+                    <td colspan="2" style="background-color: grey; color: white;">Normal</td>
+                    <td>Milk</td>
+                    <td>Tequila</td>
+                    <td>Rob</td>
+                    <td>05-21-2005</td>
+                </tr>
+                <tr>
+                    <td>#0001</td>
+                    <td>Generation 1</td>
+                    <td>Bulbasaur</td>
+                    <td><img width="100px" height="100px"
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png"
+                            alt="Chikorita"></td>
+                    <td style="background-color: green; color: white;">Grass</td>
+                    <td style="background-color: purple; color: white;">Poison</td>
+                    <td>-</td>
+                    <td>Ivysaur</td>
+                    <td>Leafy</td>
+                    <td>03-10-2009</td>
+                </tr>
+                <tr>
+                    <td>#0004</td>
+                    <td>Generation 1</td>
+                    <td>Charmander</td>
+                    <td><img width="100px" height="100px"
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png"
+                            alt="Chikorita"></td>
+                    <td colspan="2" style="background-color: red; color: white;">Fire</td>
+                    <td>-</td>
+                    <td>Charmeleon</td>
+                    <td>Leo</td>
+                    <td>11-02-2010</td>
+                </tr>
+                <tr>
+                    <td>#0007</td>
+                    <td>Generation 1</td>
+                    <td>Squirtle</td>
+                    <td><img width="100px" height="100px"
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+                            alt="Chikorita"></td>
+                    <td colspan="2" style="background-color: blue; color: white;">Water</td>
+                    <td>-</td>
+                    <td>Wartotle</td>
+                    <td>Leafy</td>
+                    <td>12-12-2008</td>
+                </tr>
+                <tr>
+                    <td>#0025</td>
+                    <td>Generation 1</td>
+                    <td>Pikachu</td>
+                    <td><img width="100px" height="100px"
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png"
+                            alt="Chikorita"></td>
+                    <td colspan="2" style="background-color: yellow; color: black;">Electric</td>
+                    <td>-</td>
+                    <td>Raichu</td>
+                    <td>Pika</td>
+                    <td>05-11-1989</td>
+                </tr>
+                <tr>
+                    <td>#0152</td>
+                    <td>Generation 2</td>
+                    <td>Chikorita</td>
+                    <td><img width="100px" height="100px"
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/152.png"
+                            alt="Chikorita"></td>
+                    <td colspan="2" style="background-color: green; color: white;">Grass</td>
+                    <td>-</td>
+                    <td>Bayleef</td>
+                    <td>Leafy</td>
+                    <td>07-19-2020</td>
+                </tr>
+                <tr>
+                    <td>#0271</td>
+                    <td>Generation 3</td>
+                    <td>Lombre</td>
+                    <td><img width="100px" height="100px"
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/271.png"
+                            alt="Chikorita"></td>
+                    <td style="background-color: blue; color: white;">Water</td>
+                    <td style="background-color: green; color: white;">Grass</td>
+                    <td>Lotad</td>
+                    <td>Ludicolo</td>
+                    <td>Ludi</td>
+                    <td>04-30-2013</td>
+                </tr>
+                <tr>
+                    <td>#0281</td>
+                    <td>Generation 3</td>
+                    <td>Kirlia</td>
+                    <td><img width="100px" height="100px"
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/281.png"
+                            alt="Chikorita"></td>
+                    <td style="background-color: rgb(191, 2, 191); color: white;">Psychic</td>
+                    <td style="background-color: violet; color: white;">Fairy</td>
+                    <td>Ralts</td>
+                    <td>Gardevoir</td>
+                    <td>Lia</td>
+                    <td>12-25-1970</td>
+                </tr>
+                <tr>
+                    <td>#0391</td>
+                    <td>Generation 4</td>
+                    <td>Monferno</td>
+                    <td><img width="100px" height="100px"
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/391.png"
+                            alt="Chikorita"></td>
+                    <td style="background-color: red; color: white;">Fire</td>
+                    <td style="background-color: chocolate; color: white;">Fighting</td>
+                    <td>Chimchar</td>
+                    <td>Infernape</td>
+                    <td>Char</td>
+                    <td>02-14-1999</td>
+                </tr>
+                <tr>
+                    <td>#0644</td>
+                    <td>Generation 5</td>
+                    <td>Zekrom</td>
+                    <td><img width="100px" height="100px"
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/644.png"
+                            alt="Chikorita"></td>
+                    <td style="background-color: navy; color: white;">Dragon</td>
+                    <td style="background-color: yellow; color: black;">Electric</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Z</td>
+                    <td>10-25-1949</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
