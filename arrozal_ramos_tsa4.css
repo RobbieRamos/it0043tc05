@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://wallpapers.com/images/high/anime-forest-background-8q66k88qia47u7x4.webp");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 20px;
+    padding: 20px; 
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+}
+
+img {
+    width: 50%;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-image: url(https://i.pinimg.com/564x/67/92/8c/67928ca40b14349940148aee8e7be660.jpg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+.card-content {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    text-align: center;
+    color: white;
+}
+
+.bulbasaur-content {
+    background-color: green; 
+}
+
+.charmander-content {
+    background-color: rgb(178, 6, 6); 
+}
+
+.squirtle-content {
+    background-color: rgb(3, 3, 173); 
+}
+
+.pikachu-content {
+    background-color: #c09e13; 
+}
+
+.jigglypuff-content {
+    background-color: #d04865; 
+}
+
+.meowth-content {
+    background-color: #888850; 
+}
+
+.pokemon-type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    margin: 5px 0;
+}
+
+.type-grass {
+    background-color: #78C850;
+}
+
+.type-poison {
+    background-color: #A040A0;
+}
+
+.type-fire {
+    background-color: #F08030;
+}
+
+.type-water {
+    background-color: #6890F0;
+}
+
+.type-electric {
+    background-color: #F8D030;
+}
+
+.type-fairy {
+    background-color: #EE99AC;
+}
+
+.type-normal {
+    background-color: #A8A878;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card-buttons button {
+    padding: 10px 30px;
+    margin: 0 5px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-add {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-release {
+    background-color: #F44336;
+    color: white;
+}
+
+.button-add:hover {
+    background-color: #45A049;
+}
+
+.button-release:hover {
+    background-color: #D32F2F;
+}
