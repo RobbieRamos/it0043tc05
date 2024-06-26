@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="arrozal_ramos_tsa7.css">
+    <script src="arrozal_ramos_tsa7.js"></script>
+</head>
+<body>
+    
+    <div class="controls">
+        <button id="reset">Reset Flexbox</button>
+        <div>
+            <label for="gap">Gap</label>
+            <input type="number" id="gap" value="0" min="0" max="0">
+        </div>
+        <div>
+            <p>Flex Direction</p>
+            <button class="flex-direction" data-direction="row">Row</button>
+            <button class="flex-direction" data-direction="column">Column</button>
+        </div>
+        <div>
+            <p>Justify Content</p>
+            <button class="justify-content" data-justify="flex-start">Start</button>
+            <button class="justify-content" data-justify="center">Center</button>
+            <button class="justify-content" data-justify="flex-end">End</button>
+            <button class="justify-content" data-justify="space-between">Space Between</button>
+            <button class="justify-content" data-justify="space-around">Space Around</button>
+            <button class="justify-content" data-justify="space-evenly">Space Evenly</button>
+        </div>
+        <div>
+            <p>Align Items</p>
+            <button class="align-items" data-align="flex-start">Start</button>
+            <button class="align-items" data-align="center">Center</button>
+            <button class="align-items" data-align="flex-end">End</button>
+        </div>
+        <div>
+            <p>Flex Grow</p>
+            <button id="grow-all">Grow All</button>
+            <button id="reset-grow">Reset</button>
+            <div>
+                <label for="grow1">Box 1</label>
+                <input type="number" id="grow1" value="0" min="0" max="5">
+            </div>
+            <div>
+                <label for="grow2">Box 2</label>
+                <input type="number" id="grow2" value="0" min="0" max="5">
+            </div>
+            <div>
+                <label for="grow3">Box 3</label>
+                <input type="number" id="grow3" value="0" min="0" max="5">
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+    </div>
+</body>
+</html>
