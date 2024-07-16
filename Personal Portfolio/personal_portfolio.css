@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #e5ba73;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+.menu-icon {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar a {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar a i {
+    margin-right: 8px;
+}
+
+.navbar a:hover {
+    color: #e5ba73;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+.home-img img {
+    width: 40vh;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #e5ba73;
+    cursor: pointer;
+}
+
+.home-content {
+    margin-left: 2rem;
+    line-height: 1.3;
+    color: white;
+    padding: 30px;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    color: #e5ba73;
+}
+
+.home-content h3 {
+    font-size: 2rem;
+}
+
+.home-content p {
+    display: block;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons li {
+    display: inline;
+}
+
+.social-icons li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.social-icons li a:hover {
+    color: #e5ba73;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #575757;
+    flex-wrap: wrap;
+}
+
+.about-img img {
+    width: 50vh;
+    box-shadow: 0 0 25px #e5ba73;
+    cursor: pointer;
+}
+
+.about-content p {
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.about-content a {
+    color: #e5ba73;
+}
+
+.portfolio {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 50px;
+    background-color: black;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    color: #fffefe;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-item:hover .gallery-item-description {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item-description h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Add some space between the heading and the button */
+}
+
+.gallery-item-description .portfolio-btn {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    background: black;
+    color: #e5ba73;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #575757;
+    flex-wrap: wrap;
+}
+
+.contact-content h1 {
+    font-size: 4rem;
+}
+
+.contact-content h4 {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px;
+    color: white;
+}
+
+.contact-content p {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem;
+    font-size: .80rem;
+    letter-spacing: .1rem;
+    background: black;
+    color: #e5ba73;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-icons li {
+    display: inline;
+}
+
+.contact-icons li a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.contact-icons li a:hover {
+    color: #e5ba73;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #e5ba73;
+    padding: 10px 0;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.navbar.active {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex; /* Show menu icon on small screens */
+    }
+    
+    .navbar {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        display: none; /* Initially hidden */
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .home-content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .about-content,
+    .home-content,
+    .contact-content {
+        text-align: center;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+}
